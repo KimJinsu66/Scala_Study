@@ -12,3 +12,10 @@ println(add1(3,4))
 def add2(x:Int,y:Int):Unit = {
   println(x+y)
 }
+
+//1라인으로 처리 가능한 경우 중괄호({}) 없이 선언 가능
+
+// 중괄호 없이 선언
+def printUpper(message:String):Unit = println(message.toUpperCase())
+// 반환타입도 생략
+def printLower(message:String) = println(message.toLowerCase())
