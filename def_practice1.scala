@@ -19,3 +19,13 @@ def add2(x:Int,y:Int):Unit = {
 def printUpper(message:String):Unit = println(message.toUpperCase())
 // 반환타입도 생략
 def printLower(message:String) = println(message.toLowerCase())
+
+// 파라미터의 기본값
+
+//y의 기본값 선언
+def add(x:Int, y:Int = 10):Unit = {
+  println(x+y)
+}
+// 기본값 이용
+add(1) // 결과값 11
+add(10,3) // 결과값 13
