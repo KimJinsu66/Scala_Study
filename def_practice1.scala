@@ -26,6 +26,15 @@ def printLower(message:String) = println(message.toLowerCase())
 def add(x:Int, y:Int = 10):Unit = {
   println(x+y)
 }
+
 // 기본값 이용
 add(1) // 결과값 11
 add(10,3) // 결과값 13
+
+
+//가변 길이 파라미터
+def sum(num:Int*) = num.reduce(_ + _)
+sum(1,2,3) // 결과 값 Int 6
+sum(1) // 결과 값 Int 1
+
+
